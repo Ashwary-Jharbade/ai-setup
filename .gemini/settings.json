@@ -1,0 +1,17 @@
+{
+    "hooks": {
+        "BeforeTool": [
+            {
+                "matcher": "write_file|replace",
+                "hooks": [
+                    {
+                        "name": "File Change Logger",
+                        "type": "command",
+                        "command": "$GEMINI_PROJECT_DIR/.gemini/hooks/file-change-logger.sh",
+                        "timeout": 5000
+                    }
+                ]
+            }
+        ]
+    }
+}

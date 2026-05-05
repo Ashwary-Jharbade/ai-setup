@@ -1,0 +1,19 @@
+{
+  "name": "ai-setup",
+  "version": "1.0.0",
+  "description": "A simple, fast, and responsive web-based calculator that performs basic and advanced mathematical operations directly in your browser.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite dev",
+    "test": "vitest run",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.7"
+  }
+}
