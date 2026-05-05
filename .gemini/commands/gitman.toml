@@ -1,0 +1,2 @@
+description = "Use this command to check git status, stage and commit your changes."
+prompt = "@git-manager {{args}}"
