@@ -122,6 +122,21 @@ export class CalculatorEngine {
   }
 
   /**
+   * Calculates the square root of the current operand.
+   */
+  sqrt(): void {
+    const current = parseFloat(this.currentOperand);
+    if (isNaN(current)) return;
+    if (current < 0) {
+      this.currentOperand = 'Error';
+      return;
+    }
+    const result = Math.sqrt(current);
+    // Handle floating point precision issues
+    this.currentOperand = parseFloat(result.toFixed(10)).toString();
+  }
+
+  /**
    * Gets the current value to display.
    */
   getDisplayValue(): string {

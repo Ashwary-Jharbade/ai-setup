@@ -66,6 +66,13 @@ class CalculatorUI {
         this.engine.percentage();
         this.updateDisplay();
     }
+    /**
+     * Handles square root button click.
+     */
+    handleSqrt() {
+        this.engine.sqrt();
+        this.updateDisplay();
+    }
 }
 // Initialize the UI when the DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
@@ -76,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const clearButton = document.querySelector('[data-clear]');
     const toggleSignButton = document.querySelector('[data-toggle-sign]');
     const percentageButton = document.querySelector('[data-percentage]');
+    const sqrtButton = document.querySelector('[data-sqrt]');
     const previousOperandTextElement = document.querySelector('[data-previous-operand]');
     const currentOperandTextElement = document.querySelector('[data-current-operand]');
     if (!currentOperandTextElement || !previousOperandTextElement)
@@ -105,5 +113,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     percentageButton === null || percentageButton === void 0 ? void 0 : percentageButton.addEventListener('click', () => {
         calculatorUI.handlePercentage();
+    });
+    sqrtButton === null || sqrtButton === void 0 ? void 0 : sqrtButton.addEventListener('click', () => {
+        calculatorUI.handleSqrt();
     });
 });

@@ -5,7 +5,7 @@ A professional, responsive, and robust web-based calculator built with TypeScrip
 ## 🚀 Features
 
 - **Standard Operations**: Addition, Subtraction, Multiplication, Division.
-- **Advanced Features**: Percentage, Sign Toggle (+/-), Decimal support.
+- **Advanced Features**: Square Root (√), Percentage, Sign Toggle (+/-), Decimal support.
 - **Precision**: Handles floating-point arithmetic precision (e.g., 0.1 + 0.2 = 0.3).
 - **Clear Logic**: Clear (C) and All Clear (AC) functionality.
 - **Responsive Design**: Modern dark theme that works on mobile and desktop.

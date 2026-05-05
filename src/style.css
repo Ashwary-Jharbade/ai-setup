@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-content: center;
     grid-template-columns: repeat(4, 80px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+    grid-template-rows: minmax(120px, auto) repeat(6, 80px);
     background-color: rgba(0, 0, 0, 0.8);
     padding: 15px;
     border-radius: 20px;
@@ -84,11 +84,11 @@ button[data-operation]:hover, button[data-equals]:hover {
     background-color: #ffaa33;
 }
 
-button[data-all-clear], button[data-clear], button[data-toggle-sign], button[data-percentage] {
+button[data-all-clear], button[data-clear], button[data-toggle-sign], button[data-percentage], button[data-sqrt] {
     background-color: #a5a5a5;
     color: black;
 }
 
-button[data-all-clear]:hover, button[data-clear]:hover, button[data-toggle-sign]:hover, button[data-percentage]:hover {
+button[data-all-clear]:hover, button[data-clear]:hover, button[data-toggle-sign]:hover, button[data-percentage]:hover, button[data-sqrt]:hover {
     background-color: #d2d2d2;
 }

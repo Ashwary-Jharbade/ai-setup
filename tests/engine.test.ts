@@ -84,6 +84,19 @@ describe('CalculatorEngine', () => {
     expect(engine.getDisplayValue()).toBe('0.5');
   });
 
+  it('should calculate square root', () => {
+    engine.appendDigit('9');
+    engine.sqrt();
+    expect(engine.getDisplayValue()).toBe('3');
+  });
+
+  it('should handle square root of negative numbers', () => {
+    engine.appendDigit('9');
+    engine.toggleSign();
+    engine.sqrt();
+    expect(engine.getDisplayValue()).toBe('Error');
+  });
+
   it('should all clear', () => {
     engine.appendDigit('5');
     engine.chooseOperation('+');

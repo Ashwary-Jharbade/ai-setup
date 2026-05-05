@@ -1,0 +1,2 @@
+description = "Quickly access the calculator developer for math queries or feature requests."
+prompt = "@calculator-dev {{args}}"
